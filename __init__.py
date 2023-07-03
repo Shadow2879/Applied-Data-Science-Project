@@ -189,7 +189,7 @@ res=table_dict(sent)
 print(metrics)
 @app.route("/")
 def index():
-    return render_template("index1.html", sentiment=res.to_html(),stockl=stock_list)
+    return render_template("landing.html", sentiment=res.to_html(),stockl=stock_list)
 
 @app.route("/predict/")
 def predict():
@@ -209,7 +209,7 @@ def predict():
         plt.close(fig)  # Close the figure to release memory
         if stock_name not in sent:
             return render_template(
-                "index.html",
+                "prediction.html",
                 stock_name=stock_name,
                 value=val[stock_name],
                 sentiment=random.choice(["Negative", "Positive"]),
