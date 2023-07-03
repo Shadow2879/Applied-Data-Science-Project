@@ -23,4 +23,6 @@ Project for Applied Data Science by team 409
 2. Choose your stock of choice in the NIFTY 50
 3. The app loads the model of the relevant stock, retrieves realtime data from NSE and shows you the predicted
    values of the stock 90 days into the future along with various model statistics.
+
+
 demo link: https://www.youtube.com/playlist?list=PL3XFXiYp65qwdWj0CNAF-0eb-hL_TWOOq
